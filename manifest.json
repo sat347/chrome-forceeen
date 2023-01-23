@@ -1,6 +1,6 @@
 {
   "name": "forceeen",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "manifest_version": 3,
   "description": "Force Choose Language to Result of Google Search.",
   "action": {
@@ -12,13 +12,7 @@
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
-  "permissions": [
-    "tabs",
-    "activeTab",
-    "scripting",
-    "background"
-  ],
-  "host_permissions": [
-    "https://www.google.com/search?*"
+   "permissions": [
+    "tabs"
   ]
 }
