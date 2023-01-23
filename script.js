@@ -9,14 +9,4 @@ chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, (tabs) => {
         chrome.tabs.update(tabs[0].id, { url: next_url })
     }
     choose_lang.addEventListener('change', changeLang, false);
-
-    query = tabs[0].url.split("?")[1].split("&");
-    query.forEach(function (q) {
-        if (q.split("=")[0] == "hl") {
-            cur_lang = q.split("=")[1];
-        }
-    });
-    if (typeof cur_lang !== 'undefined') {
-        document.getElementById("lang").querySelector("option[value='+cur_lang+']").setAttribute("selected", "selected");
-    }
 })
